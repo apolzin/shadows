@@ -1,5 +1,5 @@
-require "#{Rails.root}/vendor/plugins/shapes/vendor/plugins/shadows/lib/shadows"
-require "#{Rails.root}/vendor/plugins/shapes/vendor/plugins/shadows/lib/shadows/base"
+require File.dirname(__FILE__) + "/lib/shadows"
+require File.dirname(__FILE__) + "/lib/shadows/base"
 
 default_load_path = File.join Rails.root, %w[ app shadows ]
 shapes_load_path = File.join Rails.root, %w[ vendor plugins shapes app shadows ]
